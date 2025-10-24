@@ -1,8 +1,9 @@
 import React from "react";
-import Main from "./exam/Main";
+import Navbar from "./exam/Navbar.jsx";
 
 const App = () => {
-    return <Main />;
+  return <Navbar />;
 };
 
 export default App;
+    

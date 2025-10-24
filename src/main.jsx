@@ -1,24 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Form from './Form';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './index.css';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
 
-const Main = () => {
-  return (
-    <Router>
-      <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/form" element={<Form />} />
-      </Routes>
-      </div>
-    </Router>
-  )
+const root = document.getElementById("root");
+
+if (!root) {
+  throw new Error(
+    'Root element not found. Make sure your index.html contains <div id="root"></div>'
+  );
 }
-export default Main;
+
+createRoot(root).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

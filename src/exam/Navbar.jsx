@@ -4,9 +4,8 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Form from './Form';
-import './Main.css';
 
-const Main = () => {
+const Navbar = () => {
   return (
     <Router>
       <div className="main-container">
@@ -31,4 +30,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Navbar;
