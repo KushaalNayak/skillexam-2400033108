@@ -1,11 +1,13 @@
-import react from 'react';
-import reactDom from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Form from './Form';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './index.css';
 
-const main = () => {
+const Main = () => {
   return (
     <Router>
       <div>
@@ -19,4 +21,4 @@ const main = () => {
     </Router>
   )
 }
-export default main;
+export default Main;

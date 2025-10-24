@@ -1,5 +1,5 @@
 import React from "react";
-import main from "./main";
+import Main from "./main";
 
 const App = () => {
     return <Main />;
